@@ -1,38 +1,100 @@
+
 .App {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  width: 35%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.todo-button {
+  padding: 10px 20px;
+  border: none;
+  /* background: #28a745; */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  transition: all 0.4s;
+}
+
+.todo-button:hover {
+  background-color: rgba(37, 37, 37, 0.445);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* .todo-item {
+  background: #f1f1f1;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  outline: none;
+}
+
+
+.update-button {
+  background: #28a745;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* .circle{
+  width: 256px;
+  height: 200px;
+  border-radius: 50px;
+  filter: blur(50px);
+  -webkit-filter: blur(150px);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.one{
+  position: absolute;
+  left: 10%;
+  top: 0;
+background-color: #00fffb;
 }
+.two{
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  background-color: #ff0000;
+}
+.three{
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  background-color: #007bff;
+} */
